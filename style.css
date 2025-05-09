@@ -1,0 +1,167 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+
+}
+#home{
+    height: 100vh;
+    background-color: blue;
+    padding: 70px;
+
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont{
+    margin: 0 7px;
+    
+    height: 100%;
+}
+.re{
+    width: 50px;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    padding:  20px;
+    color: #fff;
+}
+#home .contant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+}
+#home .contant img{
+    width: 220px;
+    animation: sami 1s  ease-out;
+}
+#home .contant .text h1{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+#home .contant .text h1 span{
+    font-size: 70px;
+    color: #fff;
+}
+#home .contant .text p{
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    width: 60%;
+    color: #fff;
+}
+.btn{
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 30px;
+    color: #000;
+}
+.btn:hover{
+    background-color: transparent;
+    
+    color: #fff;
+    border: 1px solid #fff;
+}
+.soical{
+    margin-left: 3rem;
+    animation: sami 2s  ease-out;
+}
+.soical i{
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0;
+}
+.moh{
+    width: 100px;
+    display: block;
+    margin: auto;
+    animation: sami1 1.2s  ease-out;
+    padding: 10px;
+}
+@keyframes sami {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+@keyframes sami1 {
+    0%{
+        transform: translatey(200px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+    
+}
+
+/* ipad */
+@media(max-width:900px){
+    .cont{
+        margin: 0 1rem;
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    #home .contant {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0 0;
+    }
+    #home .contant .text p{
+        width: 100%;
+    }
+    #home .contant .text {
+        margin-bottom: 2rem;
+    }
+    #home .contant img{
+        width: 100px;
+         margin-bottom: 10px;
+    }
+    .soical{
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
+/* phone */
+
+@media(max-width:600px){
+    nav{
+        display: block;
+    }
+    nav .re{
+        display: block;
+        margin: 0 auto 15px;
+    }
+}
